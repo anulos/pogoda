@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1> Pogoda dla <%= city %></h1>
+
+    <h3 >Opis</h3>
+    <p> <%= desc%></p>
+    <p>Temperatura to <%=temp%></p>
+    <img src="<%= iconaUrl %>" width="300" height="300"/>
+
+    <!-- rozszerzenie  -->
+    <% if (temp> 10){ %>
+        <p>Spora ta temperatura</p>
+    <%} else {  %>
+        <p>Niezbyt duża ta temperatura</p>
+    <% }  %>
+
+
+    
+</body>
+</html>
